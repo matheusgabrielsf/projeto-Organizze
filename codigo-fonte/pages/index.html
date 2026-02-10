@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizee</title>
+  <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
+</head>
+
+<body>
+
+  <header-custom></header-custom>
+
+  <div class="home ">
+    <div class="frame ">
+
+      <div class="espaçamento1 ">
+        <div class="visualizaçao">visualização do calendário</div>
+        <div class="subtitulo">Aqui você pode visualizar todos os eventos do mês selecionado</div>
+        <div class="buttun">
+          <div class="visualizarevent" onclick="window.location.href = './agenda.html'">
+            <p class="fontevisualizar">Visualizar Eventos</p>
+          </div>
+          <div class="adicionarevent">
+            <p class="fonteadicionareve">Adicionar Eventos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="max-container" style="display: flex; align-items: center; gap: 60px;">
+          <div class="container">
+            <p class="eventhoje" id="eventos-hoje">Eventos de Hoje (17/09)</p>
+            <p class="lievent">Lista dos eventos agendados para o dia</p>
+          </div>
+          <div class="list2">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="list3 " style="display: flex; justify-content: center;">
+        <div class="max-container" style="display: flex; flex-direction: column; align-items: center; gap: 60px;">
+          <div class="container2">
+            <p class="timeradc">Timers adicionados</p>
+            <p class="eventadc">Lista dos eventos agendados para o dia.</p>
+          </div>
+          <div class="ro" id="lista-timers">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer-custom></footer-custom>
+
+
+  <script type="module" src="../js/index.js"></script>
+  <script type="module" src="./index.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/register.css">
+    <title>TelaCadastro</title>
+
+</head>
+
+<body>
+    <header-custom></header-custom>
+
+    <div style="padding: 40px 0px;">
+        <h2 class="title">Criar Conta
+        </h2>
+        <h3 class="title">Por favor, insira suas credenciais
+        </h3>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <div class="container2 max-container">
+            <div class="lateral-image">
+                <img src="../assets/img/organizze.png" alt="">
+            </div>
+
+            <form id="form" action="">
+                <label for="usuario">Nome</label>
+                <div class="input">
+                    <input id="usuario" name="usuario" placeholder="Usuário" type="text">
+                </div>
+                <label for="email">Email</label>
+                <div class="input">
+                    <input id="email" name="email" placeholder="Digite seu email" type="text">
+                </div>
+                <label for="senha">Senha</label>
+                <div class="input">
+                    <input id="senha" name="senha" placeholder="Digite sua senha" type="password">
+                </div>
+                <h4 class="text"> Mínimo 8 caracteres
+
+                </h4>
+                <div id="btn">
+                    <button type="submit" onclick="sucesso()">Cadastrar</button>
+
+                </div>
+                <a class="ja-tenho-conta-button" href="./login.html">Já tenho conta</a>
+            </form>
+        </div>
+    </div>
+
+    <footer-custom></footer-custom>
+
+
+    <script type="module" src="../js/index.js"></script>
+    <script type="module" src="./registrar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizze - Login</title>
+  <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+
+  <header-custom></header-custom>
+
+  <main class="login-container">
+    <section class="login-image">
+      <img src="../assets/img/ilustracao.jpeg" alt="Ilustração de login">
+    </section>
+
+    <section class="login-form">
+      <h2>Entrar na sua conta</h2>
+      <p>Por favor, insira suas credenciais.</p>
+
+
+      <form id="formLogin">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Digite seu email">
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Digite sua senha">
+
+        <p class="senha-info">Mínimo 8 caracteres</p>
+
+        <button type="submit" class="btn-login">Entrar</button>
+        <button type="button" id="btnConta" class="btn-register" onclick="window.location.href='./registrar.html'">Não
+          tenho conta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer-custom> </footer-custom>
+
+  <script type="module" src="../js/index.js"></script>
+  <script type="module" src="./login.js"></script>
+
+</body>
+
+</html>

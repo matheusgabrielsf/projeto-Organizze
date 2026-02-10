@@ -1,0 +1,10 @@
+timer-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 6.111px;
+  padding: 16px;
+  background: var(--white, #fff);
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
+  color: var(--gray--600);
+}

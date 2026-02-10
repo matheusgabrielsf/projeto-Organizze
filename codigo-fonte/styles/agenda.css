@@ -1,0 +1,94 @@
+@import "./index.css";
+@import "./header.css";
+@import "./footer.css";
+@import "../components/modal/css/modal.css";
+@import "./timer.css";
+
+.container-timers {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  width: 250px;
+  padding: 20px;
+  gap: 20px;
+}
+
+calendario-custom {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#dias-semana-calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+#view-calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-left: 1px solid var(--gray--200);
+  border-top: 1px solid var(--gray--200);
+}
+
+#dias-semana-calendario p {
+  padding: 10px;
+  text-align: center;
+  background-color: var(--gray--200);
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.calendario-dia-mes-anterior {
+  border-right: 1px solid var(--gray--200);
+  border-bottom: 1px solid var(--gray--200);
+  background-color: var(--gray--100);
+  padding: 10px;
+  min-height: 80px;
+}
+
+calendario-dia-custom {
+  border-right: 1px solid var(--gray--200);
+  border-bottom: 1px solid var(--gray--200);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 20px;
+  min-height: 120px;
+}
+
+.calendario-btn-add-evento-dia {
+  border: none;
+  display: flex;
+  width: fit-content;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+}
+
+calendario-evento-custom > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+calendario-evento-custom:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.btn-next-month,
+.btn-previus-month {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#list-timers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 400px;
+}

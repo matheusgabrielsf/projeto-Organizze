@@ -1,0 +1,141 @@
+@import url("index.css");
+@import url("header.css");
+@import url("footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* NAVBAR */
+
+.user a {
+  color: #0057c2;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* ÁREA PRINCIPAL */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 24px;
+  min-height: 70vh;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.login-image img {
+  width: 740px;
+  max-width: 70%;
+  display: block;
+}
+
+.login-form {
+  background: transparent;
+  width: 520px;
+  max-width: 40%;
+  padding: 0;
+}
+
+/* Card interno para manter espaçamento consistente com cadastro */
+.login-form .card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+  color: #003e88;
+}
+
+.login-form p {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #e6edf8;
+  background: #fafcff;
+  border-radius: 8px;
+}
+
+.btn-login,
+.btn-register {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.btn-login {
+  background-color: #0057c2;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: #003e88;
+}
+
+.btn-register {
+  background-color: white;
+  border: 2px solid #0057c2;
+  color: #0057c2;
+}
+
+.btn-register:hover {
+  background-color: #0057c2;
+  color: white;
+}
+
+/* FOOTER COM IMAGEM */
+.footer-img img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Responsividade: empilha imagem e formulário em telas menores */
+@media (max-width: 980px) {
+  .login-container {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 16px;
+  }
+
+  .login-image img {
+    width: 360px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .login-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .login-form .card {
+    padding: 28px;
+  }
+}

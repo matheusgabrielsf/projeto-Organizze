@@ -1,0 +1,28 @@
+message: Please cite this software using these metadata.
+title: Organizze
+authors:
+  - family-names: Lucas Cabral Cândido
+    given-names: André
+  - family-names: Lucas Sena Costa de Souza
+    given-names: Davi
+  - family-names: Gabriel da Silva Ferreira
+    given-names: Matheus
+  - family-names: Cassio Batista Xavier
+    given-names: Samuel
+  - family-names: Marques Ferreira de Sousa
+    given-names: Vinicius
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names:
+    given-names:
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Nepomuceno Curto
+    given-names: Hayala
+keywords:
+  - Agenda
+  - Eventos
+  - Organização
+repository-code:
+version: 1.0.0
+date-released: 2025-12-07

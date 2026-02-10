@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendário</title>
+  <link rel="stylesheet" href="../styles/agenda.css">
+</head>
+
+<body>
+  <header-custom></header-custom>
+
+  <div style="display: flex; justify-content: center;">
+    <div style="display: flex;" class="max-container">
+      <div class="container-timers">
+
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <p style="font-weight: 600;">Timers</p>
+          <span
+            style="font-weight: 600; font-size: 18px; border-radius: 100%; background-color: var(--blue--600); width: 20px; height: 20px; display: flex; justify-content: center; align-items: center; color: white; cursor: pointer;"
+            class="abrirModalAdicionarTimer">
+            +
+          </span>
+        </div>
+
+        <div id="list-timers">
+
+        </div>
+      </div>
+      <calendario-custom></calendario-custom>
+    </div>
+  </div>
+
+  <footer-custom></footer-custom>
+
+  <script type="module" src="../js/index.js"></script>
+
+  <script type="module">
+    import { abrirModalAdicionarTimer } from "../components/modal/js/modalAdicionarTimer.js";
+    import { appStore } from "../js/store/app-store.js";
+    import { TIMERS_STATE_UPDATED } from "../js/store/types/timers.types.js";
+
+
+
+    document
+      .querySelector(".abrirModalAdicionarTimer")
+      .addEventListener("click", () => {
+        abrirModalAdicionarTimer();
+      });
+
+    const renderTimers = (timers) => {
+      const listTimers = document.getElementById("list-timers");
+
+      listTimers.innerHTML = "";
+
+      timers.map((timer) => {
+        return listTimers.insertAdjacentHTML(
+          "beforeend",
+          `<timer-custom idTimer="${timer.id}"></timer-custom>`
+        );
+      });
+    };
+
+    appStore.subscribe(TIMERS_STATE_UPDATED, (_event, state) => {
+      renderTimers(state.timers);
+    });
+
+    appStore.subscribe("STATE_RESTORED", (_event, state) => {
+      if (!state.auth) {
+        window.location.href = "./login.html";
+        return;
+      }
+
+      renderTimers(state.timers);
+    });
+  </script>
+</body>
+
+</html>
