@@ -6,6 +6,8 @@
 
 `1° SEMESTRE`
 
+OBS: Esse repositorio é a copia do repositorio oficial, pois o repositorio oficial pertence a PUC e é privado.
+
 O Organizze é um aplicativo voltado para auxiliar na organização de tarefas, compromissos e hábitos, buscando aumentar a produtividade e reduzir o estresse do dia a dia. A proposta combina metodologias consolidadas, como o GTD (Getting Things Done) e a Técnica Pomodoro, em uma interface simples e acessível, pensada tanto para estudantes quanto para profissionais e pessoas com múltiplas responsabilidades.
 
 Diferente de ferramentas como Trello, Todoist, Google Agenda e Notion, o Organizze se destaca pela praticidade, pela curva de aprendizado reduzida e por oferecer recursos essenciais já na versão básica. A aplicação integra calendário, categorias personalizadas, eventos recorrentes e cronômetro Pomodoro, com foco em responsividade, compatibilidade entre dispositivos e acessibilidade, oferecendo uma solução inclusiva para melhorar a gestão do tempo e das atividades cotidianas.Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
